@@ -1,0 +1,22 @@
+.status {
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.status.checking {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status.connected {
+  background: #d1edff;
+  color: #004085;
+}
+
+.status.error {
+  background: #f8d7da;
+  color: #721c24;
+}
