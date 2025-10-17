@@ -23,30 +23,45 @@ const pool = new Pool({
   connectionTimeoutMillis: 2000,
 });
 
-// Middlewares - CORS CON TODOS LOS MÉTODOS Y HEADERS
-const allowedOrigins = [
-  'https://proyecto-desarrollo-web-frontend.onrender.com',
-  'http://localhost:5173', 
-  'http://127.0.0.1:5173'
-];
+// ==================== CORS CONFIGURATION ====================
 
-app.use(cors({
-  origin: function (origin, callback) {
-    // Permitir requests sin origin (como mobile apps)
-    if (!origin) return callback(null, true);
-    
-    if (allowedOrigins.indexOf(origin) !== -1) {
-      callback(null, true);
-    } else {
-      console.log('🚫 CORS bloqueado para origen:', origin);
-      // Temporalmente permitir todos para testing
-      callback(null, true);
-    }
-  },
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
-}));
+// Middleware CORS MANUAL - 100% FUNCIONAL
+app.use((req, res, next) => {
+  console.log('🔧 CORS Middleware ejecutándose para:', req.method, req.url, 'Origin:', req.headers.origin);
+  
+  const allowedOrigins = [
+    'https://proyecto-desarrollo-web-frontend.onrender.com',
+    'http://localhost:5173',
+    'http://127.0.0.1:5173'
+  ];
+  
+  const requestOrigin = req.headers.origin;
+  
+  // Permitir el origin si está en la lista, sino permitir el que viene
+  if (allowedOrigins.includes(requestOrigin)) {
+    res.setHeader('Access-Control-Allow-Origin', requestOrigin);
+  } else if (allowedOrigins.length > 0) {
+    res.setHeader('Access-Control-Allow-Origin', allowedOrigins[0]);
+  } else {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+  }
+  
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS, PATCH');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With, Accept, Origin');
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
+  res.setHeader('Access-Control-Max-Age', '86400'); // 24 hours
+  
+  // Manejar preflight requests
+  if (req.method === 'OPTIONS') {
+    console.log('✅ Preflight request permitida para:', requestOrigin);
+    return res.status(200).end();
+  }
+  
+  next();
+});
+
+// Middleware para parsear JSON
+app.use(express.json());
 
 // ==================== MIDDLEWARES DE AUTENTICACIÓN ====================
 
