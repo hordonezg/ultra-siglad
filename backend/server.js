@@ -23,7 +23,7 @@ const pool = new Pool({
   connectionTimeoutMillis: 2000,
 });
 
-// Middlewares - CORS dinámico para desarrollo y producción
+// Middlewares - CORS dinámico
 const allowedOrigins = [
   'https://proyecto-desarrollo-web-frontend.onrender.com',
   'http://localhost:5173', 
@@ -32,7 +32,7 @@ const allowedOrigins = [
 
 app.use(cors({
   origin: function (origin, callback) {
-    // Permitir requests sin origin (como mobile apps o curl)
+    // Permitir requests sin origin
     if (!origin) return callback(null, true);
     
     if (allowedOrigins.indexOf(origin) !== -1) {
