@@ -1,8 +1,9 @@
 import axios from 'axios';
+import { API_URL } from '../config/config.js'; // ← IMPORTA LA CONFIG
 
 // Configuración base de axios
 const api = axios.create({
-  baseURL: 'http://localhost:3000/api',
+  baseURL: API_URL, // ← USA LA VARIABLE DE CONFIG
   timeout: 10000,
 });
 

@@ -1,8 +1,8 @@
-const API_URL = 'http://localhost:3000/api';
+import { API_URL } from '../config/config.js'; // ← IMPORTA LA CONFIG
 
 export const authService = {
   async login(email, password) {
-    const response = await fetch(`${API_URL}/auth/login`, {
+    const response = await fetch(`${API_URL}/auth/login`, { // ← USA LA VARIABLE
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
