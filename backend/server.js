@@ -48,9 +48,6 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
 }));
 
-// Manejar preflight requests explícitamente
-app.options('*', cors());
-
 // ==================== MIDDLEWARES DE AUTENTICACIÓN ====================
 
 const verifyToken = (req, res, next) => {
