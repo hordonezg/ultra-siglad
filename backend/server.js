@@ -23,27 +23,12 @@ const pool = new Pool({
   connectionTimeoutMillis: 2000,
 });
 
-// Middlewares - CORS dinámico
-const allowedOrigins = [
-  'https://proyecto-desarrollo-web-frontend.onrender.com',
-  'http://localhost:5173', 
-  'http://127.0.0.1:5173'
-];
-
+// Middlewares
 app.use(cors({
-  origin: function (origin, callback) {
-    // Permitir requests sin origin
-    if (!origin) return callback(null, true);
-    
-    if (allowedOrigins.indexOf(origin) !== -1) {
-      callback(null, true);
-    } else {
-      console.log('🚫 CORS bloqueado para origen:', origin);
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
+  origin: ['http://localhost:5173', 'http://127.0.0.1:5173'],
   credentials: true
 }));
+app.use(express.json());
 
 // ==================== MIDDLEWARES DE AUTENTICACIÓN ====================
 
