@@ -281,26 +281,24 @@ npm install
 
 cd ../frontend
 npm install
-Configuración (.env backend):
 
-bash
-Copiar código
+Configuración (.env backend):
 DATABASE_URL=postgresql://usuario:password@localhost:5432/siglad
 JWT_SECRET=tu_jwt_secret_muy_seguro
 PORT=3000
 FRONTEND_URL=http://localhost:5173
-Ejecución:
 
-bash
-Copiar código
+Ejecución:
 cd backend
 npm run dev
 
 cd frontend
 npm run dev
+
 </div>
 🔐 Roles de Usuario
 <div class="card"> **Administrador** - Gestión completa de usuarios - Visualización de estadísticas globales - Administración del sistema - Acceso a bitácoras de auditoría
+
 Transportista
 
 Registro de declaraciones DUCA
@@ -326,11 +324,9 @@ Registro de motivos de rechazo
 <div class="card"> **Panel de Administrador:** Gestión de usuarios, estadísticas, bitácora, monitorización **Gestión de Declaraciones (Transportista):** Formulario DUCA completo, múltiples items, cálculo automático de valores, validación en tiempo real, consulta de estados **Validación (Agente Aduanero):** Lista de declaraciones pendientes, validación detallada, aprobación/rechazo con motivos, estadísticas y historial **Consulta de Estados:** Filtros por estado, vista detallada de declaraciones, estadísticas personalizadas, seguimiento completo </div>
 🔍 API Documentation
 <div class="card"> **Autenticación:** `POST /api/auth/login` ```json { "email": "usuario@ejemplo.com", "password": "contraseña" } ```
+
 Gestión de Declaraciones:
 POST /api/declaraciones
-
-json
-Copiar código
 {
   "duca": {
     "numeroDocumento": "GT2025DUCA001234",
@@ -338,21 +334,21 @@ Copiar código
     // ... estructura completa según Anexo II
   }
 }
+
 Validación por Agente:
 POST /api/declaraciones/agente/validar/{id}
-
-json
-Copiar código
 {
   "accion": "aprobar|rechazar",
   "motivoRechazo": "Motivo opcional para rechazo"
 }
+
 Consulta de Estados:
 GET /api/declaraciones
 
 </div>
 🗃️ Base de Datos
 <div class="card"> **Esquema Principal (SQL):** ```sql -- Tabla de usuarios CREATE TABLE usuarios ( id SERIAL PRIMARY KEY, nombre VARCHAR(100) NOT NULL, correo VARCHAR(100) UNIQUE NOT NULL, contrasena VARCHAR(255) NOT NULL, rol VARCHAR(20) NOT NULL, activo BOOLEAN DEFAULT true, fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP );
+
 -- Tabla de declaraciones
 CREATE TABLE declaraciones (
 id SERIAL PRIMARY KEY,
@@ -386,8 +382,6 @@ numero_declaracion VARCHAR(20),
 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-yaml
-Copiar código
 </div>
 
 ---
