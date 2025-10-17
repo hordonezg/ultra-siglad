@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { authService } from '../../services/authService.js';
 import Swal from 'sweetalert2'; // ✅ IMPORTAR SWEETALERT2
 import '../../components/LogoutButton.css'; // ✅ IMPORTAS TU CSS AQUÍ
-
-const API_URL = 'http://localhost:3000/api';
+import { API_URL } from '../../config/config.js';
 
 export function UserManagement() {
   const [users, setUsers] = useState([]);
