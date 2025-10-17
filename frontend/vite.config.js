@@ -8,6 +8,7 @@ export default defineConfig({
   },
   preview: {
     port: process.env.PORT ? parseInt(process.env.PORT) : 5173,
-    host: true // ¡IMPORTANTE para Render!
+    host: true,
+    allowedHosts: true // ← PERMITE TODOS LOS HOSTS
   }
 })
