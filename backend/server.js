@@ -23,12 +23,33 @@ const pool = new Pool({
   connectionTimeoutMillis: 2000,
 });
 
-// Middlewares
+// Middlewares - CORS CON TODOS LOS MÉTODOS Y HEADERS
+const allowedOrigins = [
+  'https://proyecto-desarrollo-web-frontend.onrender.com',
+  'http://localhost:5173', 
+  'http://127.0.0.1:5173'
+];
+
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://127.0.0.1:5173'],
-  credentials: true
+  origin: function (origin, callback) {
+    // Permitir requests sin origin (como mobile apps)
+    if (!origin) return callback(null, true);
+    
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      console.log('🚫 CORS bloqueado para origen:', origin);
+      // Temporalmente permitir todos para testing
+      callback(null, true);
+    }
+  },
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
 }));
-app.use(express.json());
+
+// Manejar preflight requests explícitamente
+app.options('*', cors());
 
 // ==================== MIDDLEWARES DE AUTENTICACIÓN ====================
 
