@@ -1,166 +1,150 @@
-🚛 SIGLAD - Sistema de Gestión Logística Aduanera
 <div align="center">
-https://img.shields.io/badge/SIGLAD-Sistema%2520Aduanero-blue
-https://img.shields.io/badge/Node.js-18%252B-green
-https://img.shields.io/badge/React-18-blue
-https://img.shields.io/badge/PostgreSQL-15-orange
-https://img.shields.io/badge/Autenticaci%C3%B3n-JWT-yellow
 
-Sistema integral para la gestión de declaraciones aduaneras con roles múltiples
+# 🚛 **SIGLAD - Sistema de Gestión Logística Aduanera**
+
+[![SIGLAD](https://img.shields.io/badge/SIGLAD-Sistema%20Aduanero-blue)](#)
+[![Node.js](https://img.shields.io/badge/Node.js-18%2B-green?logo=node.js&logoColor=white)](#)
+[![React](https://img.shields.io/badge/React-18-blue?logo=react&logoColor=white)](#)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-orange?logo=postgresql&logoColor=white)](#)
+[![JWT](https://img.shields.io/badge/Autenticación-JWT-yellow?logo=jsonwebtokens&logoColor=black)](#)
+
+**Sistema integral para la gestión de declaraciones aduaneras con roles múltiples**
+
+---
+
+<!-- Animación suave (rotación hover) -->
+<style>
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+.tech-icon {
+  transition: transform 0.3s ease-in-out;
+}
+.tech-icon:hover {
+  animation: rotate 1.5s linear infinite;
+}
+</style>
+
+<p align="center">
+  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="60" />
+  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="60" />
+  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="60" />
+  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="60" />
+  <img class="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="60" />
+</p>
 
 </div>
-📋 Tabla de Contenidos
-🎯 Descripción del Proyecto
 
-🏗️ Arquitectura del Sistema
+---
 
-🛠️ Stack Tecnológico
+## 📋 Tabla de Contenidos
+- 🎯 Descripción del Proyecto
+- 🏗️ Arquitectura del Sistema
+- 🛠️ Stack Tecnológico
+- 👥 Casos de Uso Implementados
+- 🚀 Características Principales
+- 📁 Estructura del Proyecto
+- ⚙️ Instalación y Configuración
+- 🔐 Roles de Usuario
+- 📊 Módulos del Sistema
+- 🔍 API Documentation
+- 🤝 Contribución
 
-👥 Casos de Uso Implementados
+---
 
-🚀 Características Principales
+## 🎯 Descripción del Proyecto
+**SIGLAD** es un sistema web desarrollado para optimizar y digitalizar los procesos de gestión aduanera.  
+Permite la administración de declaraciones **DUCA**, validación de documentos y seguimiento de operaciones con control de acceso basado en roles.
 
-📁 Estructura del Proyecto
+---
 
-⚙️ Instalación y Configuración
+## 🏗️ Arquitectura del Sistema
 
-🔐 Roles de Usuario
+**Componentes Principales:**
+- **Frontend:** Aplicación React con diseño responsive  
+- **Backend:** API RESTful con Node.js y Express  
+- **Base de Datos:** PostgreSQL con estructura relacional  
+- **Balanceador:** Distribución de carga para alta disponibilidad  
+- **Infraestructura:** Despliegue en nube (AWS/Google Cloud/Render)
 
-📊 Módulos del Sistema
+---
 
-🔍 API Documentation
+## 🛠️ Stack Tecnológico
 
-🤝 Contribución
+### 🔹 **Frontend**
+- React 18  
+- SweetAlert2  
+- CSS3  
+- Axios  
 
-🎯 Descripción del Proyecto
-SIGLAD es un sistema web desarrollado para optimizar y digitalizar los procesos de gestión aduanera. Permite la administración de declaraciones DUCA, validación de documentos y seguimiento de operaciones de importación/exportación con control de acceso basado en roles.
+### 🔹 **Backend**
+- Node.js  
+- Express.js  
+- JWT  
+- bcryptjs  
+- CORS  
 
-🏗️ Arquitectura del Sistema
+### 🔹 **Base de Datos**
+- PostgreSQL  
+- PG Driver  
 
+### 🔹 **Seguridad**
+- JWT Tokens  
+- Bcrypt  
+- Validación multi-nivel  
+- Bitácora de auditoría  
 
+---
 
+## 👥 Casos de Uso Implementados
 
+### 🔐 CU-001: Autenticación de Usuarios con Roles
+**Objetivo:** Garantizar acceso seguro al sistema mediante autenticación con credenciales válidas y control de permisos por roles.
 
+**Flujo Principal:**
+1. Usuario ingresa credenciales  
+2. Sistema valida y genera token JWT  
+3. Redirección según rol del usuario  
 
-Componentes Principales:
-Frontend: Aplicación React con diseño responsive
+**Características:**
+- Tokens JWT con expiración de 2 horas  
+- Encriptación bcrypt  
+- Bitácora de intentos de acceso  
 
-Backend: API RESTful con Node.js y Express
+**Roles:** Administrador, Transportista, Agente Aduanero
 
-Base de Datos: PostgreSQL con estructura relacional
+---
 
-Balanceador: Distribución de carga para alta disponibilidad
+### 👥 CU-002: Gestión de Usuarios (Administrador)
+**Objetivo:** Permitir al Administrador mantener actualizado el registro de usuarios del sistema.
 
-Infraestructura: Despliegue en nube (AWS/Google Cloud/Render)
+**Funcionalidades:**
+- Crear, editar y eliminar usuarios  
+- Asignación de roles y estados  
+- Validación de correos únicos  
+- Registro en bitácora  
 
-🛠️ Stack Tecnológico
-Frontend
-React 18 - Framework principal
+---
 
-SweetAlert2 - Alertas y notificaciones premium
+### 📝 CU-003: Registro de Declaración Aduanera (Transportista)
+**Objetivo:** Digitalizar el registro de declaraciones aduaneras.
 
-CSS3 - Estilos y animaciones
-
-Axios - Cliente HTTP para APIs
-
-Backend
-Node.js - Runtime de JavaScript
-
-Express.js - Framework web
-
-JWT - Autenticación por tokens
-
-bcryptjs - Encriptación de contraseñas
-
-CORS - Control de acceso entre dominios
-
-Base de Datos
-PostgreSQL - Base de datos relacional
-
-PG - Cliente PostgreSQL para Node.js
-
-Seguridad
-JWT Tokens - Autenticación stateless
-
-Bcrypt - Hash de contraseñas
-
-Validación multi-nivel - Frontend y backend
-
-Bitácora de auditoría - Registro de todas las operaciones
-
-👥 Casos de Uso Implementados
-🔐 CU-001: Autenticación de Usuarios con Roles
-Objetivo: Garantizar acceso seguro al sistema mediante autenticación con credenciales válidas y control de permisos por roles.
-
-Flujo Principal:
-
-Usuario ingresa credenciales
-
-Sistema valida y genera token JWT
-
-Redirección según rol del usuario
-
-Características:
-
-Tokens JWT con expiración de 2 horas
-
-Encriptación bcrypt para contraseñas
-
-Bitácora de intentos de acceso
-
-Roles: Administrador, Transportista, Agente Aduanero
-
-👥 CU-002: Gestión de Usuarios (Administrador)
-Objetivo: Permitir al Administrador mantener actualizado el registro de usuarios del sistema.
-
-Funcionalidades:
-
-Crear, editar y eliminar usuarios
-
-Asignación de roles y estados
-
-Validación de correos únicos
-
-Registro en bitácora de operaciones
-
-Reglas de Negocio:
-
-Solo administradores pueden gestionar usuarios
-
-Validación de campos obligatorios
-
-Prevención de duplicados de correo
-
-📝 CU-003: Registro de Declaración Aduanera (Transportista)
-Objetivo: Digitalizar el registro de declaraciones aduaneras para mejorar la trazabilidad de mercancías y facilitar la validación aduanera.
-
-Flujo Principal:
-
-Transportista ingresa datos DUCA mediante JSON
-
-Sistema valida formato según Anexo II
-
-Validación de importador activo
-
-Almacenamiento con estado "Pendiente"
-
-Estructura DUCA:
-
-json
+```json
 {
   "duca": {
     "numeroDocumento": "GT2025DUCA001234",
     "fechaEmision": "2025-10-04",
     "paisEmisor": "GT",
     "tipoOperacion": "IMPORTACION",
-    "exportador": { ... },
-    "importador": { ... },
-    "transporte": { ... },
+    "exportador": { },
+    "importador": { },
+    "transporte": { },
     "mercancias": {
       "numeroItems": 2,
-      "items": [ ... ]
+      "items": []
     },
-    "valores": { ... },
+    "valores": { },
     "estadoDocumento": "CONFIRMADO",
     "firmaElectronica": "AB12CD34EF56GH78"
   }
@@ -173,96 +157,54 @@ Campos obligatorios completos
 
 Unicidad del número DUCA
 
-Estructura de mercancías válida
-
 🔍 CU-004: Validación de Declaración (Agente Aduanero)
-Objetivo: Garantizar el control y revisión de las declaraciones para evitar inconsistencias y fraudes en el proceso aduanero.
-
 Flujo Principal:
 
 Agente consulta declaraciones pendientes
 
-Selecciona declaración para validación
+Selecciona declaración
 
-Verifica información completa
+Verifica información
 
 Aprueba o rechaza con motivo
 
-Información Revisada:
-
-Datos básicos DUCA (número, fecha, país)
-
-Información de exportador/importador
-
-Detalles de transporte y ruta
-
-Valores y mercancías declaradas
-
-Estado documental y firma electrónica
-
 Estados Post-Validación:
 
-✅ Validada - Cumple con todos los requisitos
+✅ Validada
 
-❌ Rechazada - Requiere correcciones (con motivo)
+❌ Rechazada
 
 📊 CU-005: Consulta de Estado de Declaración
-Objetivo: Permitir a los transportistas consultar el estado de sus declaraciones de manera transparente y en tiempo real.
-
 Funcionalidades:
 
-Lista completa de declaraciones propias
+Lista completa de declaraciones
 
-Filtros por estado (Pendiente, Validada, Rechazada)
+Filtros por estado
 
-Vista detallada de cada declaración
-
-Seguimiento del proceso de validación
+Vista detallada
 
 Estados Disponibles:
 
-⏳ Pendiente - En espera de validación
+⏳ Pendiente
 
-✅ Validada - Aprobada por agente aduanero
+✅ Validada
 
-❌ Rechazada - Requiere correcciones
+❌ Rechazada
 
 🚀 Características Principales
-✨ Interfaz de Usuario
-Design System coherente y profesional
+✨ Interfaz de Usuario moderna y responsive
 
-Modo oscuro premium en todas las vistas
+🔒 Autenticación JWT
 
-Responsive design para dispositivos móviles
+📈 Validación multi-capas
 
-Alertas elegantes con SweetAlert2
+🧾 Bitácora completa
 
-Scroll personalizado transparente y discreto
-
-🔒 Seguridad y Auditoría
-Autenticación JWT con expiración configurable
-
-Control de acceso basado en roles
-
-Bitácora completa de todas las operaciones
-
-Validación multi-capas (frontend y backend)
-
-Manejo seguro de errores y excepciones
-
-📊 Gestión de Declaraciones
-Formularios DUCA completos según normativa
-
-Validación en tiempo real de datos
-
-Estados de declaración (Pendiente, Validada, Rechazada)
-
-Seguimiento completo del proceso
-
-Múltiples items de mercancía por declaración
+💼 Seguimiento de DUCA en tiempo real
 
 📁 Estructura del Proyecto
 text
+Copiar código
 siglad/
 ├── frontend/
 │   ├── src/
@@ -291,151 +233,50 @@ siglad/
 └── database/
     └── schema.sql
 ⚙️ Instalación y Configuración
-Prerrequisitos
+🔧 Prerrequisitos
 Node.js 18+
 
 PostgreSQL 15+
 
 npm o yarn
 
-Instalación
+🧩 Instalación
 bash
-# Clonar repositorio
+Copiar código
 git clone https://github.com/tu-usuario/siglad.git
 cd siglad
 
-# Instalar dependencias del backend
 cd backend
 npm install
 
-# Instalar dependencias del frontend
 cd ../frontend
 npm install
-Configuración
+⚙️ Configuración
 bash
-# Variables de entorno (backend/.env)
+Copiar código
 DATABASE_URL=postgresql://usuario:password@localhost:5432/siglad
 JWT_SECRET=tu_jwt_secret_muy_seguro
 PORT=3000
 FRONTEND_URL=http://localhost:5173
-Ejecución
+▶️ Ejecución
 bash
-# Iniciar backend
+Copiar código
+# Backend
 cd backend
 npm run dev
 
-# Iniciar frontend (terminal nueva)
-cd frontend
+# Frontend
+cd ../frontend
 npm run dev
 🔐 Roles de Usuario
-👨‍💼 Administrador
-Gestión completa de usuarios
+Rol	Permisos
+👨‍💼 Administrador	CRUD de usuarios, estadísticas, bitácora
+🚛 Transportista	Registro y consulta de declaraciones
+👮‍♂️ Agente Aduanero	Validación y aprobación/rechazo
 
-Visualización de estadísticas globales
-
-Administración del sistema
-
-Acceso a bitácoras de auditoría
-
-🚛 Transportista
-Registro de declaraciones DUCA
-
-Consulta de estado de declaraciones
-
-Gestión de sus propias declaraciones
-
-Visualización de historial personal
-
-👮‍♂️ Agente Aduanero
-Validación de declaraciones pendientes
-
-Aprobación o rechazo de DUCA
-
-Consulta de historial y estadísticas
-
-Registro de motivos de rechazo
-
-📊 Módulos del Sistema
-🏠 Panel de Administrador
-Gestión de usuarios (CRUD completo)
-
-Estadísticas del sistema
-
-Bitácora de operaciones
-
-Monitorización del sistema
-
-📝 Gestión de Declaraciones (Transportista)
-Formulario DUCA completo según Anexo II
-
-Múltiples items de mercancía
-
-Cálculo automático de valores
-
-Validación en tiempo real
-
-Consulta de estados
-
-🔍 Validación (Agente Aduanero)
-Lista de declaraciones pendientes
-
-Validación detallada de documentos
-
-Aprobación/rechazo con motivos
-
-Estadísticas de validación
-
-Historial de decisiones
-
-📊 Consulta de Estados
-Filtros por estado (Pendiente, Validada, Rechazada)
-
-Vista detallada de declaraciones
-
-Estadísticas personalizadas
-
-Seguimiento del proceso completo
-
-🔍 API Documentation
-Autenticación
-http
-POST /api/auth/login
-Content-Type: application/json
-
-{
-  "email": "usuario@ejemplo.com",
-  "password": "contraseña"
-}
-Gestión de Declaraciones
-http
-POST /api/declaraciones
-Authorization: Bearer {token}
-Content-Type: application/json
-
-{
-  "duca": {
-    "numeroDocumento": "GT2025DUCA001234",
-    "fechaEmision": "2025-10-04",
-    // ... estructura completa según Anexo II
-  }
-}
-Validación de Declaraciones
-http
-POST /api/declaraciones/agente/validar/{id}
-Authorization: Bearer {token}
-Content-Type: application/json
-
-{
-  "accion": "aprobar|rechazar",
-  "motivoRechazo": "Motivo opcional para rechazo"
-}
-Consulta de Estados
-http
-GET /api/declaraciones
-Authorization: Bearer {token}
 🗃️ Base de Datos
-Esquema Principal
 sql
+Copiar código
 -- Tabla de usuarios
 CREATE TABLE usuarios (
     id SERIAL PRIMARY KEY,
@@ -468,49 +309,24 @@ CREATE TABLE declaraciones (
     fecha_validacion TIMESTAMP,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
--- Tabla de bitácora
-CREATE TABLE bitacora (
-    id SERIAL PRIMARY KEY,
-    usuario VARCHAR(100) NOT NULL,
-    ip_origen VARCHAR(45) NOT NULL,
-    operacion VARCHAR(50) NOT NULL,
-    resultado VARCHAR(50) NOT NULL,
-    numero_declaracion VARCHAR(20),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
 🤝 Contribución
-¡Las contribuciones son bienvenidas! Por favor:
-
 Fork el proyecto
 
-Crea una rama para tu feature (git checkout -b feature/AmazingFeature)
+Crea una rama (feature/AmazingFeature)
 
-Commit tus cambios (git commit -m 'Add some AmazingFeature')
+Commit (git commit -m 'Add feature')
 
-Push a la rama (git push origin feature/AmazingFeature)
+Push (git push origin feature/AmazingFeature)
 
 Abre un Pull Request
 
-Guía de Estilo
-Seguir las convenciones de código existentes
-
-Incluir documentación para nuevas funcionalidades
-
-Probar cambios exhaustivamente
-
-Mantener compatibilidad con versiones anteriores
-
 <div align="center">
 🚀 SIGLAD - Sistema de Gestión Logística Aduanera
-*Versión 1.0 - Implementación Completa de 5 Casos de Uso*
-
+Versión 1.0 - Implementación Completa de 5 Casos de Uso
 Desarrollado con ❤️ por el equipo SIGLAD
 
-Reportar Bug ·
-Solicitar Feature ·
-Documentación
+📄 Reportar Bug · 🚀 Solicitar Feature · 📘 Documentación
 
-*© 2025 SIGLAD - Todos los derechos reservados*
+© 2025 SIGLAD — Todos los derechos reservados
 
-</div>
+</div> ```
