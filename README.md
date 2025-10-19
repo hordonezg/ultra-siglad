@@ -168,110 +168,85 @@ SIGLAD es un sistema web desarrollado para optimizar y digitalizar los procesos 
 }
 ```
 
-Validaciones:
+### ✅ Validaciones
 
-Formato JSON según Anexo II
+- Formato JSON según Anexo II  
+- Campos obligatorios completos  
+- Unicidad del número DUCA  
+- Estructura de mercancías válida  
 
-Campos obligatorios completos
+---
 
-Unicidad del número DUCA
+### 🔍 CU-004: Validación de Declaración (Agente Aduanero)
 
-Estructura de mercancías válida
-
-🔍 CU-004: Validación de Declaración (Agente Aduanero)
-Objetivo:
+**Objetivo:**  
 Garantizar el control y revisión de las declaraciones para evitar inconsistencias y fraudes en el proceso aduanero.
 
-Flujo Principal:
+**Flujo Principal:**
+1. Agente consulta declaraciones pendientes  
+2. Selecciona declaración para validación  
+3. Verifica información completa  
+4. Aprueba o rechaza con motivo  
 
-Agente consulta declaraciones pendientes
+**Información Revisada:**
+- Datos básicos DUCA (número, fecha, país)  
+- Información de exportador/importador  
+- Detalles de transporte y ruta  
+- Valores y mercancías declaradas  
+- Estado documental y firma electrónica  
 
-Selecciona declaración para validación
+**Estados Post-Validación:**
+- ✅ Validada - Cumple con todos los requisitos  
+- ❌ Rechazada - Requiere correcciones (con motivo)  
 
-Verifica información completa
+---
 
-Aprueba o rechaza con motivo
+### 📊 CU-005: Consulta de Estado de Declaración
 
-Información Revisada:
-
-Datos básicos DUCA (número, fecha, país)
-
-Información de exportador/importador
-
-Detalles de transporte y ruta
-
-Valores y mercancías declaradas
-
-Estado documental y firma electrónica
-
-Estados Post-Validación:
-
-✅ Validada - Cumple con todos los requisitos
-
-❌ Rechazada - Requiere correcciones (con motivo)
-
-📊 CU-005: Consulta de Estado de Declaración
-Objetivo:
+**Objetivo:**  
 Permitir a los transportistas consultar el estado de sus declaraciones de manera transparente y en tiempo real.
 
-Funcionalidades:
+**Funcionalidades:**
+- Lista completa de declaraciones propias  
+- Filtros por estado (Pendiente, Validada, Rechazada)  
+- Vista detallada de cada declaración  
+- Seguimiento del proceso de validación  
 
-Lista completa de declaraciones propias
+**Estados Disponibles:**
+- ⏳ Pendiente - En espera de validación  
+- ✅ Validada - Aprobada por agente aduanero  
+- ❌ Rechazada - Requiere correcciones  
 
-Filtros por estado (Pendiente, Validada, Rechazada)
+---
 
-Vista detallada de cada declaración
+### 🚀 Características Principales
 
-Seguimiento del proceso de validación
+**✨ Interfaz de Usuario**
+- Design System coherente y profesional  
+- Modo oscuro premium en todas las vistas  
+- Responsive design para dispositivos móviles  
+- Alertas elegantes con SweetAlert2  
+- Scroll personalizado transparente y discreto  
 
-Estados Disponibles:
+**🔒 Seguridad y Auditoría**
+- Autenticación JWT con expiración configurable  
+- Control de acceso basado en roles  
+- Bitácora completa de todas las operaciones  
+- Validación multi-capas (frontend y backend)  
+- Manejo seguro de errores y excepciones  
 
-⏳ Pendiente - En espera de validación
+**📊 Gestión de Declaraciones**
+- Formularios DUCA completos según normativa  
+- Validación en tiempo real de datos  
+- Estados de declaración (Pendiente, Validada, Rechazada)  
+- Seguimiento completo del proceso  
+- Múltiples items de mercancía por declaración  
 
-✅ Validada - Aprobada por agente aduanero
+---
 
-❌ Rechazada - Requiere correcciones
+### 📁 Estructura del Proyecto
 
-🚀 Características Principales
-✨ Interfaz de Usuario
-
-Design System coherente y profesional
-
-Modo oscuro premium en todas las vistas
-
-Responsive design para dispositivos móviles
-
-Alertas elegantes con SweetAlert2
-
-Scroll personalizado transparente y discreto
-
-🔒 Seguridad y Auditoría
-
-Autenticación JWT con expiración configurable
-
-Control de acceso basado en roles
-
-Bitácora completa de todas las operaciones
-
-Validación multi-capas (frontend y backend)
-
-Manejo seguro de errores y excepciones
-
-📊 Gestión de Declaraciones
-
-Formularios DUCA completos según normativa
-
-Validación en tiempo real de datos
-
-Estados de declaración (Pendiente, Validada, Rechazada)
-
-Seguimiento completo del proceso
-
-Múltiples items de mercancía por declaración
-
-📁 Estructura del Proyecto
-text
-Copiar código
+```text
 siglad/
 ├── frontend/
 │   ├── src/
@@ -299,7 +274,9 @@ siglad/
 │       └── auth.js
 └── database/
     └── schema.sql
-⚙️ Instalación y Configuración
+```
+
+### ⚙️ Instalación y Configuración
 Prerrequisitos
 
 Node.js 18+
@@ -312,6 +289,7 @@ Instalación
 
 bash
 Copiar código
+
 # Clonar repositorio
 git clone https://github.com/tu-usuario/siglad.git
 cd siglad
@@ -377,6 +355,7 @@ Registro de motivos de rechazo
 🗃️ Base de Datos — Esquema Principal
 sql
 Copiar código
+
 -- Tabla de usuarios
 CREATE TABLE usuarios (
     id SERIAL PRIMARY KEY,
@@ -420,6 +399,7 @@ CREATE TABLE bitacora (
     numero_declaracion VARCHAR(20),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
 🤝 Contribución
 ¡Las contribuciones son bienvenidas!
 
@@ -443,11 +423,14 @@ Probar cambios exhaustivamente
 
 Mantener compatibilidad con versiones anteriores
 
-<div align="center"> 🚀 **SIGLAD - Sistema de Gestión Logística Aduanera** *Versión 1.0 - Implementación Completa de 5 Casos de Uso*
+<div align="center">
+🚀 SIGLAD - Sistema de Gestión Logística Aduanera
+Versión 1.0 - Implementación Completa de 5 Casos de Uso
+
 Desarrollado con ❤️ por el equipo SIGLAD
 
 Reportar Bug · Solicitar Feature · Documentación
 
 © 2025 SIGLAD - Todos los derechos reservados
 
-</div>
+</div> 
