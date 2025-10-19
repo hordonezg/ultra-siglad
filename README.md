@@ -2,14 +2,24 @@
 
 # 🚛 **SIGLAD - Sistema de Gestión Logística Aduanera**
 
-<!-- Badges -->
-<p>
-  <img src="https://img.shields.io/badge/SIGLAD-Sistema%20Aduanero-blue" alt="SIGLAD" />
-  <img src="https://img.shields.io/badge/Node.js-18%2B-green?logo=node.js&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/React-18-blue?logo=react&logoColor=white" alt="React" />
-  <img src="https://img.shields.io/badge/PostgreSQL-15-orange?logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Autenticaci%C3%B3n-JWT-yellow" alt="JWT" />
+<div align="center">
+
+<!-- 🌐 Badges Dinámicos -->
+<p align="center">
+  <img src="https://img.shields.io/badge/SIGLAD-Sistema%20Aduanero-blue?style=for-the-badge&logo=github&logoColor=white&labelColor=101010&color=0057B7" alt="SIGLAD Badge" />
+  <img src="https://img.shields.io/badge/Node.js-18%2B-green?style=for-the-badge&logo=node.js&logoColor=white&labelColor=101010&color=339933" alt="Node.js Badge" />
+  <img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react&logoColor=61DAFB&labelColor=101010&color=20232A" alt="React Badge" />
+  <img src="https://img.shields.io/badge/PostgreSQL-15-orange?style=for-the-badge&logo=postgresql&logoColor=white&labelColor=101010&color=336791" alt="PostgreSQL Badge" />
+  <img src="https://img.shields.io/badge/JWT-Autenticación-yellow?style=for-the-badge&logo=jsonwebtokens&logoColor=white&labelColor=101010&color=FFD700" alt="JWT Badge" />
 </p>
+
+<!-- ✨ Animación SVG Dinámica -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" alt="animated-snake" width="600" />
+</p>
+
+</div>
+
 
 **Sistema integral para la gestión de declaraciones aduaneras con roles múltiples**
 
