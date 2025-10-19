@@ -145,7 +145,7 @@ SIGLAD es un sistema web desarrollado para optimizar y digitalizar los procesos 
 - Validación de importador activo  
 - Almacenamiento con estado "Pendiente"
 
-### Estructura DUCA
+### 🧩 Estructura DUCA
 
 ```json
 {
@@ -177,7 +177,8 @@ Unicidad del número DUCA
 Estructura de mercancías válida
 
 🔍 CU-004: Validación de Declaración (Agente Aduanero)
-Objetivo: Garantizar el control y revisión de las declaraciones para evitar inconsistencias y fraudes en el proceso aduanero.
+Objetivo:
+Garantizar el control y revisión de las declaraciones para evitar inconsistencias y fraudes en el proceso aduanero.
 
 Flujo Principal:
 
@@ -208,7 +209,8 @@ Estados Post-Validación:
 ❌ Rechazada - Requiere correcciones (con motivo)
 
 📊 CU-005: Consulta de Estado de Declaración
-Objetivo: Permitir a los transportistas consultar el estado de sus declaraciones de manera transparente y en tiempo real.
+Objetivo:
+Permitir a los transportistas consultar el estado de sus declaraciones de manera transparente y en tiempo real.
 
 Funcionalidades:
 
@@ -229,7 +231,7 @@ Estados Disponibles:
 ❌ Rechazada - Requiere correcciones
 
 🚀 Características Principales
-Interfaz de Usuario
+✨ Interfaz de Usuario
 
 Design System coherente y profesional
 
@@ -241,7 +243,7 @@ Alertas elegantes con SweetAlert2
 
 Scroll personalizado transparente y discreto
 
-Seguridad y Auditoría
+🔒 Seguridad y Auditoría
 
 Autenticación JWT con expiración configurable
 
@@ -253,7 +255,7 @@ Validación multi-capas (frontend y backend)
 
 Manejo seguro de errores y excepciones
 
-Gestión de Declaraciones
+📊 Gestión de Declaraciones
 
 Formularios DUCA completos según normativa
 
@@ -370,100 +372,6 @@ Consulta de historial y estadísticas
 
 Registro de motivos de rechazo
 
-📊 Módulos del Sistema
-🏠 Panel de Administrador
-
-Gestión de usuarios (CRUD completo)
-
-Estadísticas del sistema
-
-Bitácora de operaciones
-
-Monitorización del sistema
-
-📝 Gestión de Declaraciones (Transportista)
-
-Formulario DUCA completo según Anexo II
-
-Múltiples items de mercancía
-
-Cálculo automático de valores
-
-Validación en tiempo real
-
-Consulta de estados
-
-🔍 Validación (Agente Aduanero)
-
-Lista de declaraciones pendientes
-
-Validación detallada de documentos
-
-Aprobación/rechazo con motivos
-
-Estadísticas de validación
-
-Historial de decisiones
-
-📊 Consulta de Estados
-
-Filtros por estado (Pendiente, Validada, Rechazada)
-
-Vista detallada de declaraciones
-
-Estadísticas personalizadas
-
-Seguimiento del proceso completo
-
-🔍 API Documentation
-Autenticación
-
-http
-Copiar código
-POST /api/auth/login
-Content-Type: application/json
-json
-Copiar código
-{
-  "email": "usuario@ejemplo.com",
-  "password": "contraseña"
-}
-Gestión de Declaraciones
-
-http
-Copiar código
-POST /api/declaraciones
-Authorization: Bearer {token}
-Content-Type: application/json
-json
-Copiar código
-{
-  "duca": {
-    "numeroDocumento": "GT2025DUCA001234",
-    "fechaEmision": "2025-10-04"
-  }
-}
-Nota: incluir el resto de campos según el Anexo II.
-
-Validación de Declaraciones
-
-http
-Copiar código
-POST /api/declaraciones/agente/validar/{id}
-Authorization: Bearer {token}
-Content-Type: application/json
-json
-Copiar código
-{
-  "accion": "aprobar|rechazar",
-  "motivoRechazo": "Motivo opcional para rechazo"
-}
-Consulta de Estados
-
-h
-Copiar código
-GET /api/declaraciones
-Authorization: Bearer {token}
 🗃️ Base de Datos — Esquema Principal
 sql
 Copiar código
@@ -511,11 +419,11 @@ CREATE TABLE bitacora (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 🤝 Contribución
-¡Las contribuciones son bienvenidas! Por favor:
+¡Las contribuciones son bienvenidas!
 
 Fork el proyecto
 
-Crea una rama para tu feature (git checkout -b feature/AmazingFeature)
+Crea una rama (git checkout -b feature/AmazingFeature)
 
 Commit tus cambios (git commit -m 'Add some AmazingFeature')
 
@@ -533,11 +441,11 @@ Probar cambios exhaustivamente
 
 Mantener compatibilidad con versiones anteriores
 
-<div align="center"> 🚀 SIGLAD - Sistema de Gestión Logística Aduanera Versión 1.0 - Implementación Completa de 5 Casos de Uso
+<div align="center"> 🚀 **SIGLAD - Sistema de Gestión Logística Aduanera** *Versión 1.0 - Implementación Completa de 5 Casos de Uso*
 Desarrollado con ❤️ por el equipo SIGLAD
 
 Reportar Bug · Solicitar Feature · Documentación
 
 © 2025 SIGLAD - Todos los derechos reservados
 
-</div> 
+</div> ```
