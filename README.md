@@ -2,6 +2,8 @@
 
 # 🚛 **SIGLAD - Sistema de Gestión Logística Aduanera**
 
+<div align="center"
+
 <!-- 🌐 Tecnologías Principales con Estilo de Íconos (Plano y Profesional) -->
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="45" height="45" alt="SIGLAD" />
@@ -10,6 +12,11 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="45" height="45" alt="PostgreSQL" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg" width="45" height="45" alt="JWT" />
 </p>
+
+<p align="center">
+  <b>Sistema integral para la gestión de declaraciones aduaneras con roles múltiples</b>
+</p>
+
 
 <!-- ✨ Animación SVG Dinámica -->
 <p align="center">
