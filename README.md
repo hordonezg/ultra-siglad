@@ -430,13 +430,13 @@ Probar cambios exhaustivamente
 Mantener compatibilidad con versiones anteriores
 
 <div align="center">
-🚀 SIGLAD - Sistema de Gestión Logística Aduanera
-Versión 1.0 - Implementación Completa de 5 Casos de Uso
 
-Desarrollado con ❤️ por el equipo SIGLAD
+**🚀 SIGLAD - Sistema de Gestión Logística Aduanera**  
+**Versión 1.0 - Implementación Completa de 5 Casos de Uso**  
+**Desarrollado con ❤️ por el equipo SIGLAD**
 
-Reportar Bug · Solicitar Feature · Documentación
+**Reportar Bug · Solicitar Feature · Documentación**
 
-© 2025 SIGLAD - Todos los derechos reservados
+**© 2025 SIGLAD - Todos los derechos reservados**
 
-</div> 
+</div>
