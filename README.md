@@ -145,7 +145,8 @@ SIGLAD es un sistema web desarrollado para optimizar y digitalizar los procesos 
 - Validación de importador activo  
 - Almacenamiento con estado "Pendiente"
 
-**Estructura DUCA:**
+### Estructura DUCA
+
 ```json
 {
   "duca": {
@@ -153,14 +154,14 @@ SIGLAD es un sistema web desarrollado para optimizar y digitalizar los procesos 
     "fechaEmision": "2025-10-04",
     "paisEmisor": "GT",
     "tipoOperacion": "IMPORTACION",
-    "exportador": { },
-    "importador": { },
-    "transporte": { },
+    "exportador": {},
+    "importador": {},
+    "transporte": {},
     "mercancias": {
       "numeroItems": 2,
-      "items": [ ]
+      "items": []
     },
-    "valores": { },
+    "valores": {},
     "estadoDocumento": "CONFIRMADO",
     "firmaElectronica": "AB12CD34EF56GH78"
   }
@@ -421,7 +422,8 @@ http
 Copiar código
 POST /api/auth/login
 Content-Type: application/json
-
+json
+Copiar código
 {
   "email": "usuario@ejemplo.com",
   "password": "contraseña"
@@ -433,14 +435,16 @@ Copiar código
 POST /api/declaraciones
 Authorization: Bearer {token}
 Content-Type: application/json
-
+json
+Copiar código
 {
   "duca": {
     "numeroDocumento": "GT2025DUCA001234",
     "fechaEmision": "2025-10-04"
-    // ... estructura completa según Anexo II
   }
 }
+Nota: incluir el resto de campos según el Anexo II.
+
 Validación de Declaraciones
 
 http
@@ -448,14 +452,15 @@ Copiar código
 POST /api/declaraciones/agente/validar/{id}
 Authorization: Bearer {token}
 Content-Type: application/json
-
+json
+Copiar código
 {
   "accion": "aprobar|rechazar",
   "motivoRechazo": "Motivo opcional para rechazo"
 }
 Consulta de Estados
 
-http
+h
 Copiar código
 GET /api/declaraciones
 Authorization: Bearer {token}
@@ -528,10 +533,7 @@ Probar cambios exhaustivamente
 
 Mantener compatibilidad con versiones anteriores
 
-<div align="center">
-🚀 SIGLAD - Sistema de Gestión Logística Aduanera
-Versión 1.0 - Implementación Completa de 5 Casos de Uso
-
+<div align="center"> 🚀 SIGLAD - Sistema de Gestión Logística Aduanera Versión 1.0 - Implementación Completa de 5 Casos de Uso
 Desarrollado con ❤️ por el equipo SIGLAD
 
 Reportar Bug · Solicitar Feature · Documentación
