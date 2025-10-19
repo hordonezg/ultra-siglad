@@ -2,15 +2,13 @@
 
 # 🚛 **SIGLAD - Sistema de Gestión Logística Aduanera**
 
-<div align="center"
-
-<!-- 🌐 Badges Modernos con Estilo Corporativo -->
+<!-- 🌐 Tecnologías Principales con Estilo de Íconos (Plano y Profesional) -->
 <p align="center">
-  <img src="https://img.shields.io/badge/⚙️%20SIGLAD-SISTEMA%20ADUANERO-0057B7?style=flat-square&logo=github&logoColor=white&labelColor=101010" alt="SIGLAD Badge" />
-  <img src="https://img.shields.io/badge/🟢%20Node.js-18%2B-339933?style=flat-square&logo=node.js&logoColor=white&labelColor=101010" alt="Node.js Badge" />
-  <img src="https://img.shields.io/badge/⚛️%20React-18-20232A?style=flat-square&logo=react&logoColor=61DAFB&labelColor=101010" alt="React Badge" />
-  <img src="https://img.shields.io/badge/🐘%20PostgreSQL-15-336791?style=flat-square&logo=postgresql&logoColor=white&labelColor=101010" alt="PostgreSQL Badge" />
-  <img src="https://img.shields.io/badge/🔐%20JWT-Autenticación-FFD700?style=flat-square&logo=jsonwebtokens&logoColor=white&labelColor=101010" alt="JWT Badge" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="45" height="45" alt="SIGLAD" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="45" height="45" alt="Node.js" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="45" height="45" alt="React" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="45" height="45" alt="PostgreSQL" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg" width="45" height="45" alt="JWT" />
 </p>
 
 <!-- ✨ Animación SVG Dinámica -->
