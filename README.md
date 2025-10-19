@@ -1,166 +1,166 @@
-🚛 SIGLAD - Sistema de Gestión Logística Aduanera
 <div align="center">
-https://img.shields.io/badge/SIGLAD-Sistema%2520Aduanero-blue
-https://img.shields.io/badge/Node.js-18%252B-green
-https://img.shields.io/badge/React-18-blue
-https://img.shields.io/badge/PostgreSQL-15-orange
-https://img.shields.io/badge/Autenticaci%C3%B3n-JWT-yellow
 
-Sistema integral para la gestión de declaraciones aduaneras con roles múltiples
+# 🚛 **SIGLAD - Sistema de Gestión Logística Aduanera**
+
+<!-- Badges -->
+<p>
+  <img src="https://img.shields.io/badge/SIGLAD-Sistema%20Aduanero-blue" alt="SIGLAD" />
+  <img src="https://img.shields.io/badge/Node.js-18%2B-green?logo=node.js&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/React-18-blue?logo=react&logoColor=white" alt="React" />
+  <img src="https://img.shields.io/badge/PostgreSQL-15-orange?logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Autenticaci%C3%B3n-JWT-yellow" alt="JWT" />
+</p>
+
+**Sistema integral para la gestión de declaraciones aduaneras con roles múltiples**
+
+<!-- Íconos estilo “tablero” como tu imagen -->
+<p>
+  <!-- Fila 1 -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" width="38" title="GitLab" style="margin:6px;transition:transform .2s" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="38" title="Docker" style="margin:6px;transition:transform .2s" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" width="38" title="Nginx" style="margin:6px;transition:transform .2s" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="38" title="PostgreSQL" style="margin:6px;transition:transform .2s" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg" width="38" title="Swagger / OpenAPI" style="margin:6px;transition:transform .2s" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'"/>
+
+  <!-- Fila 2 -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="38" title="Linux" style="margin:6px;transition:transform .2s" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" width="38" title="AWS" style="margin:6px;transition:transform .2s" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="38" title="Azure" style="margin:6px;transition:transform .2s" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" width="38" title="Raspberry Pi" style="margin:6px;transition:transform .2s" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'"/>
+
+  <!-- Fila 3 -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="38" title="C" style="margin:6px;transition:transform .2s" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="38" title="C++" style="margin:6px;transition:transform .2s" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="38" title="Python" style="margin:6px;transition:transform .2s" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="38" title="HTML5" style="margin:6px;transition:transform .2s" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="38" title="CSS3" style="margin:6px;transition:transform .2s" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="38" title="JavaScript" style="margin:6px;transition:transform .2s" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="38" title="Node.js" style="margin:6px;transition:transform .2s" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'"/>
+</p>
 
 </div>
-📋 Tabla de Contenidos
-🎯 Descripción del Proyecto
 
-🏗️ Arquitectura del Sistema
+---
 
-🛠️ Stack Tecnológico
+## 📋 Tabla de Contenidos
+- 🎯 [Descripción del Proyecto](#-descripción-del-proyecto)
+- 🏗️ [Arquitectura del Sistema](#-arquitectura-del-sistema)
+- 🛠️ [Stack Tecnológico](#-stack-tecnológico)
+- 👥 [Casos de Uso Implementados](#-casos-de-uso-implementados)
+- 🚀 [Características Principales](#-características-principales)
+- 📁 [Estructura del Proyecto](#-estructura-del-proyecto)
+- ⚙️ [Instalación y Configuración](#-instalación-y-configuración)
+- 🔐 [Roles de Usuario](#-roles-de-usuario)
+- 📊 [Módulos del Sistema](#-módulos-del-sistema)
+- 🔍 [API Documentation](#-api-documentation)
+- 🗃️ [Base de Datos](#-base-de-datos)
+- 🤝 [Contribución](#-contribución)
 
-👥 Casos de Uso Implementados
+---
 
-🚀 Características Principales
-
-📁 Estructura del Proyecto
-
-⚙️ Instalación y Configuración
-
-🔐 Roles de Usuario
-
-📊 Módulos del Sistema
-
-🔍 API Documentation
-
-🤝 Contribución
-
-🎯 Descripción del Proyecto
+## 🎯 Descripción del Proyecto
 SIGLAD es un sistema web desarrollado para optimizar y digitalizar los procesos de gestión aduanera. Permite la administración de declaraciones DUCA, validación de documentos y seguimiento de operaciones de importación/exportación con control de acceso basado en roles.
 
-🏗️ Arquitectura del Sistema
+---
 
+## 🏗️ Arquitectura del Sistema
 
+**Componentes Principales:**
+- **Frontend:** Aplicación React con diseño responsive  
+- **Backend:** API RESTful con Node.js y Express  
+- **Base de Datos:** PostgreSQL con estructura relacional  
+- **Balanceador:** Distribución de carga para alta disponibilidad  
+- **Infraestructura:** Despliegue en nube (AWS/Google Cloud/Render)
 
+---
 
+## 🛠️ Stack Tecnológico
 
+**Frontend**  
+- React 18 - Framework principal  
+- SweetAlert2 - Alertas y notificaciones premium  
+- CSS3 - Estilos y animaciones  
+- Axios - Cliente HTTP para APIs  
 
-Componentes Principales:
-Frontend: Aplicación React con diseño responsive
+**Backend**  
+- Node.js - Runtime de JavaScript  
+- Express.js - Framework web  
+- JWT - Autenticación por tokens  
+- bcryptjs - Encriptación de contraseñas  
+- CORS - Control de acceso entre dominios  
 
-Backend: API RESTful con Node.js y Express
+**Base de Datos**  
+- PostgreSQL - Base de datos relacional  
+- PG - Cliente PostgreSQL para Node.js  
 
-Base de Datos: PostgreSQL con estructura relacional
+**Seguridad**  
+- JWT Tokens - Autenticación stateless  
+- Bcrypt - Hash de contraseñas  
+- Validación multi-nivel - Frontend y backend  
+- Bitácora de auditoría - Registro de todas las operaciones
 
-Balanceador: Distribución de carga para alta disponibilidad
+---
 
-Infraestructura: Despliegue en nube (AWS/Google Cloud/Render)
+## 👥 Casos de Uso Implementados
 
-🛠️ Stack Tecnológico
-Frontend
-React 18 - Framework principal
+### 🔐 CU-001: Autenticación de Usuarios con Roles
+**Objetivo:** Garantizar acceso seguro al sistema mediante autenticación con credenciales válidas y control de permisos por roles.
 
-SweetAlert2 - Alertas y notificaciones premium
+**Flujo Principal:**
+1. Usuario ingresa credenciales  
+2. Sistema valida y genera token JWT  
+3. Redirección según rol del usuario
 
-CSS3 - Estilos y animaciones
+**Características:**
+- Tokens JWT con expiración de 2 horas  
+- Encriptación bcrypt para contraseñas  
+- Bitácora de intentos de acceso
 
-Axios - Cliente HTTP para APIs
+**Roles:** Administrador, Transportista, Agente Aduanero
 
-Backend
-Node.js - Runtime de JavaScript
+---
 
-Express.js - Framework web
+### 👥 CU-002: Gestión de Usuarios (Administrador)
+**Objetivo:** Permitir al Administrador mantener actualizado el registro de usuarios del sistema.
 
-JWT - Autenticación por tokens
+**Funcionalidades:**
+- Crear, editar y eliminar usuarios  
+- Asignación de roles y estados  
+- Validación de correos únicos  
+- Registro en bitácora de operaciones
 
-bcryptjs - Encriptación de contraseñas
+**Reglas de Negocio:**
+- Solo administradores pueden gestionar usuarios  
+- Validación de campos obligatorios  
+- Prevención de duplicados de correo
 
-CORS - Control de acceso entre dominios
+---
 
-Base de Datos
-PostgreSQL - Base de datos relacional
+### 📝 CU-003: Registro de Declaración Aduanera (Transportista)
+**Objetivo:** Digitalizar el registro de declaraciones aduaneras para mejorar la trazabilidad de mercancías y facilitar la validación aduanera.
 
-PG - Cliente PostgreSQL para Node.js
+**Flujo Principal:**
+- Transportista ingresa datos DUCA mediante JSON  
+- Sistema valida formato según Anexo II  
+- Validación de importador activo  
+- Almacenamiento con estado "Pendiente"
 
-Seguridad
-JWT Tokens - Autenticación stateless
-
-Bcrypt - Hash de contraseñas
-
-Validación multi-nivel - Frontend y backend
-
-Bitácora de auditoría - Registro de todas las operaciones
-
-👥 Casos de Uso Implementados
-🔐 CU-001: Autenticación de Usuarios con Roles
-Objetivo: Garantizar acceso seguro al sistema mediante autenticación con credenciales válidas y control de permisos por roles.
-
-Flujo Principal:
-
-Usuario ingresa credenciales
-
-Sistema valida y genera token JWT
-
-Redirección según rol del usuario
-
-Características:
-
-Tokens JWT con expiración de 2 horas
-
-Encriptación bcrypt para contraseñas
-
-Bitácora de intentos de acceso
-
-Roles: Administrador, Transportista, Agente Aduanero
-
-👥 CU-002: Gestión de Usuarios (Administrador)
-Objetivo: Permitir al Administrador mantener actualizado el registro de usuarios del sistema.
-
-Funcionalidades:
-
-Crear, editar y eliminar usuarios
-
-Asignación de roles y estados
-
-Validación de correos únicos
-
-Registro en bitácora de operaciones
-
-Reglas de Negocio:
-
-Solo administradores pueden gestionar usuarios
-
-Validación de campos obligatorios
-
-Prevención de duplicados de correo
-
-📝 CU-003: Registro de Declaración Aduanera (Transportista)
-Objetivo: Digitalizar el registro de declaraciones aduaneras para mejorar la trazabilidad de mercancías y facilitar la validación aduanera.
-
-Flujo Principal:
-
-Transportista ingresa datos DUCA mediante JSON
-
-Sistema valida formato según Anexo II
-
-Validación de importador activo
-
-Almacenamiento con estado "Pendiente"
-
-Estructura DUCA:
-
-json
+**Estructura DUCA:**
+```json
 {
   "duca": {
     "numeroDocumento": "GT2025DUCA001234",
     "fechaEmision": "2025-10-04",
     "paisEmisor": "GT",
     "tipoOperacion": "IMPORTACION",
-    "exportador": { ... },
-    "importador": { ... },
-    "transporte": { ... },
+    "exportador": { },
+    "importador": { },
+    "transporte": { },
     "mercancias": {
       "numeroItems": 2,
-      "items": [ ... ]
+      "items": [ ]
     },
-    "valores": { ... },
+    "valores": { },
     "estadoDocumento": "CONFIRMADO",
     "firmaElectronica": "AB12CD34EF56GH78"
   }
@@ -228,7 +228,8 @@ Estados Disponibles:
 ❌ Rechazada - Requiere correcciones
 
 🚀 Características Principales
-✨ Interfaz de Usuario
+Interfaz de Usuario
+
 Design System coherente y profesional
 
 Modo oscuro premium en todas las vistas
@@ -239,7 +240,8 @@ Alertas elegantes con SweetAlert2
 
 Scroll personalizado transparente y discreto
 
-🔒 Seguridad y Auditoría
+Seguridad y Auditoría
+
 Autenticación JWT con expiración configurable
 
 Control de acceso basado en roles
@@ -250,7 +252,8 @@ Validación multi-capas (frontend y backend)
 
 Manejo seguro de errores y excepciones
 
-📊 Gestión de Declaraciones
+Gestión de Declaraciones
+
 Formularios DUCA completos según normativa
 
 Validación en tiempo real de datos
@@ -263,6 +266,7 @@ Múltiples items de mercancía por declaración
 
 📁 Estructura del Proyecto
 text
+Copiar código
 siglad/
 ├── frontend/
 │   ├── src/
@@ -292,6 +296,7 @@ siglad/
     └── schema.sql
 ⚙️ Instalación y Configuración
 Prerrequisitos
+
 Node.js 18+
 
 PostgreSQL 15+
@@ -299,7 +304,9 @@ PostgreSQL 15+
 npm o yarn
 
 Instalación
+
 bash
+Copiar código
 # Clonar repositorio
 git clone https://github.com/tu-usuario/siglad.git
 cd siglad
@@ -312,14 +319,18 @@ npm install
 cd ../frontend
 npm install
 Configuración
+
 bash
+Copiar código
 # Variables de entorno (backend/.env)
 DATABASE_URL=postgresql://usuario:password@localhost:5432/siglad
 JWT_SECRET=tu_jwt_secret_muy_seguro
 PORT=3000
 FRONTEND_URL=http://localhost:5173
 Ejecución
+
 bash
+Copiar código
 # Iniciar backend
 cd backend
 npm run dev
@@ -329,6 +340,7 @@ cd frontend
 npm run dev
 🔐 Roles de Usuario
 👨‍💼 Administrador
+
 Gestión completa de usuarios
 
 Visualización de estadísticas globales
@@ -338,6 +350,7 @@ Administración del sistema
 Acceso a bitácoras de auditoría
 
 🚛 Transportista
+
 Registro de declaraciones DUCA
 
 Consulta de estado de declaraciones
@@ -347,6 +360,7 @@ Gestión de sus propias declaraciones
 Visualización de historial personal
 
 👮‍♂️ Agente Aduanero
+
 Validación de declaraciones pendientes
 
 Aprobación o rechazo de DUCA
@@ -357,6 +371,7 @@ Registro de motivos de rechazo
 
 📊 Módulos del Sistema
 🏠 Panel de Administrador
+
 Gestión de usuarios (CRUD completo)
 
 Estadísticas del sistema
@@ -366,6 +381,7 @@ Bitácora de operaciones
 Monitorización del sistema
 
 📝 Gestión de Declaraciones (Transportista)
+
 Formulario DUCA completo según Anexo II
 
 Múltiples items de mercancía
@@ -377,6 +393,7 @@ Validación en tiempo real
 Consulta de estados
 
 🔍 Validación (Agente Aduanero)
+
 Lista de declaraciones pendientes
 
 Validación detallada de documentos
@@ -388,6 +405,7 @@ Estadísticas de validación
 Historial de decisiones
 
 📊 Consulta de Estados
+
 Filtros por estado (Pendiente, Validada, Rechazada)
 
 Vista detallada de declaraciones
@@ -398,7 +416,9 @@ Seguimiento del proceso completo
 
 🔍 API Documentation
 Autenticación
+
 http
+Copiar código
 POST /api/auth/login
 Content-Type: application/json
 
@@ -407,7 +427,9 @@ Content-Type: application/json
   "password": "contraseña"
 }
 Gestión de Declaraciones
+
 http
+Copiar código
 POST /api/declaraciones
 Authorization: Bearer {token}
 Content-Type: application/json
@@ -415,12 +437,14 @@ Content-Type: application/json
 {
   "duca": {
     "numeroDocumento": "GT2025DUCA001234",
-    "fechaEmision": "2025-10-04",
+    "fechaEmision": "2025-10-04"
     // ... estructura completa según Anexo II
   }
 }
 Validación de Declaraciones
+
 http
+Copiar código
 POST /api/declaraciones/agente/validar/{id}
 Authorization: Bearer {token}
 Content-Type: application/json
@@ -430,12 +454,14 @@ Content-Type: application/json
   "motivoRechazo": "Motivo opcional para rechazo"
 }
 Consulta de Estados
+
 http
+Copiar código
 GET /api/declaraciones
 Authorization: Bearer {token}
-🗃️ Base de Datos
-Esquema Principal
+🗃️ Base de Datos — Esquema Principal
 sql
+Copiar código
 -- Tabla de usuarios
 CREATE TABLE usuarios (
     id SERIAL PRIMARY KEY,
@@ -493,6 +519,7 @@ Push a la rama (git push origin feature/AmazingFeature)
 Abre un Pull Request
 
 Guía de Estilo
+
 Seguir las convenciones de código existentes
 
 Incluir documentación para nuevas funcionalidades
@@ -503,14 +530,12 @@ Mantener compatibilidad con versiones anteriores
 
 <div align="center">
 🚀 SIGLAD - Sistema de Gestión Logística Aduanera
-*Versión 1.0 - Implementación Completa de 5 Casos de Uso*
+Versión 1.0 - Implementación Completa de 5 Casos de Uso
 
 Desarrollado con ❤️ por el equipo SIGLAD
 
-Reportar Bug ·
-Solicitar Feature ·
-Documentación
+Reportar Bug · Solicitar Feature · Documentación
 
-*© 2025 SIGLAD - Todos los derechos reservados*
+© 2025 SIGLAD - Todos los derechos reservados
 
-</div>
+</div> 
