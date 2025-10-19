@@ -166,6 +166,7 @@ SIGLAD es un sistema web desarrollado para optimizar y digitalizar los procesos 
     "firmaElectronica": "AB12CD34EF56GH78"
   }
 }
+
 Validaciones:
 
 Formato JSON según Anexo II
