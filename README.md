@@ -352,11 +352,12 @@ Consulta de historial y estadísticas
 
 Registro de motivos de rechazo
 
-🗃️ Base de Datos — Esquema Principal
-sql
-Copiar código
+### 🗃️ Base de Datos — Esquema Principal
 
--- Tabla de usuarios
+```sql
+-- =========================================================
+-- 📋 Tabla de Usuarios
+-- =========================================================
 CREATE TABLE usuarios (
     id SERIAL PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
@@ -367,7 +368,9 @@ CREATE TABLE usuarios (
     fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Tabla de declaraciones
+-- =========================================================
+-- 🚛 Tabla de Declaraciones
+-- =========================================================
 CREATE TABLE declaraciones (
     id SERIAL PRIMARY KEY,
     numero_documento VARCHAR(20) UNIQUE NOT NULL,
@@ -389,7 +392,9 @@ CREATE TABLE declaraciones (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Tabla de bitácora
+-- =========================================================
+-- 🧾 Tabla de Bitácora
+-- =========================================================
 CREATE TABLE bitacora (
     id SERIAL PRIMARY KEY,
     usuario VARCHAR(100) NOT NULL,
@@ -399,6 +404,7 @@ CREATE TABLE bitacora (
     numero_declaracion VARCHAR(20),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+```
 
 🤝 Contribución
 ¡Las contribuciones son bienvenidas!
