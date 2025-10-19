@@ -84,12 +84,12 @@ export function Login() {
           {loading ? 'Iniciando sesión...' : 'Ingresar al sistema'}
         </button>
 
-        <div style={{ marginTop: '1rem', textAlign: 'center', fontSize: '0.9rem', color: '#666' }}>
+        {/* <div style={{ marginTop: '1rem', textAlign: 'center', fontSize: '0.9rem', color: '#666' }}>
           <strong>Usuarios de prueba:</strong><br/>
           admin@siglad.com / admin123<br/>
           transportista@siglad.com / trans123<br/>
           agente@siglad.com / agente123
-        </div>
+        </div> */}
       </form>
     </div>
   );
