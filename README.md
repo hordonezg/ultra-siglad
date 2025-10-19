@@ -1,25 +1,40 @@
 <div align="center">
 
-# 🚛 **SIGLAD - Sistema de Gestión Logística Aduanera**
-
-<div align="center">
-
-<!-- 🌐 Badges Dinámicos -->
+<!-- 💠 Encabezado visual de tecnologías -->
 <p align="center">
-  <img src="https://img.shields.io/badge/SIGLAD-Sistema%20Aduanero-blue?style=for-the-badge&logo=github&logoColor=white&labelColor=101010&color=0057B7" alt="SIGLAD Badge" />
-  <img src="https://img.shields.io/badge/Node.js-18%2B-green?style=for-the-badge&logo=node.js&logoColor=white&labelColor=101010&color=339933" alt="Node.js Badge" />
-  <img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react&logoColor=61DAFB&labelColor=101010&color=20232A" alt="React Badge" />
-  <img src="https://img.shields.io/badge/PostgreSQL-15-orange?style=for-the-badge&logo=postgresql&logoColor=white&labelColor=101010&color=336791" alt="PostgreSQL Badge" />
-  <img src="https://img.shields.io/badge/JWT-Autenticación-yellow?style=for-the-badge&logo=jsonwebtokens&logoColor=white&labelColor=101010&color=FFD700" alt="JWT Badge" />
+  <img src="https://img.shields.io/badge/SIGLAD-⚙️%20Sistema%20Aduanero-0057B7?style=flat-square&logo=github&logoColor=white&labelColor=101010" alt="SIGLAD Badge" />
+  <img src="https://img.shields.io/badge/Node.js-18%2B-339933?style=flat-square&logo=node.js&logoColor=white&labelColor=101010" alt="Node.js Badge" />
+  <img src="https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=white&labelColor=101010" alt="React Badge" />
+  <img src="https://img.shields.io/badge/PostgreSQL-15-336791?style=flat-square&logo=postgresql&logoColor=white&labelColor=101010" alt="PostgreSQL Badge" />
+  <img src="https://img.shields.io/badge/JWT-Autenticación-FFD700?style=flat-square&logo=jsonwebtokens&logoColor=white&labelColor=101010" alt="JWT Badge" />
 </p>
 
-<!-- ✨ Animación SVG Dinámica -->
+<!-- ✨ Línea divisoria elegante -->
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" height="3px" />
+
+<!-- 💬 Subtítulo -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" alt="animated-snake" width="600" />
+  <b>Sistema integral para la gestión de declaraciones aduaneras con roles múltiples</b>
+</p>
+
+<!-- 🌐 Iconos de stack -->
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" width="40" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" width="40" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="40" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="40" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" width="40" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="40" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" width="40" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="40" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" height="40" />
 </p>
 
 </div>
-
 
 **Sistema integral para la gestión de declaraciones aduaneras con roles múltiples**
 
