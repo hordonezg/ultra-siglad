@@ -449,4 +449,4 @@ Reportar Bug · Solicitar Feature · Documentación
 
 © 2025 SIGLAD - Todos los derechos reservados
 
-</div> ```
+</div>
