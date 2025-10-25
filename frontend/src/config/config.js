@@ -4,7 +4,7 @@ const config = {
     API_URL: 'http://localhost:3000/api'
   },
   production: {
-    API_URL: 'https://proyecto-desarrollo-web-wts1.onrender.com/api' // ← CAMBIA POR TU URL REAL
+    API_URL: 'https://ultra-siglad-backend.onrender.com' // ← CAMBIA POR TU URL REAL
   }
 };
 
