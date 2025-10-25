@@ -4,7 +4,7 @@ previews:
 services:
   - type: web
     name: ultra-siglad-backend
-    runtime: node          # <- OJO: 'runtime', no 'env'
+    runtime: node
     plan: starter
     branch: master
     numInstances: 2
@@ -20,15 +20,3 @@ services:
         sync: false
       - key: JWT_SECRET
         sync: false
-
-staticSites:
-  - name: ultra-siglad-frontend
-    rootDir: frontend
-    buildCommand: npm ci && npm run build
-    publishPath: dist
-    envVars:
-      - key: VITE_API_URL
-        fromService:
-          type: web
-          name: ultra-siglad-backend
-          property: url
