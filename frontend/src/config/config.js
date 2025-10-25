@@ -10,7 +10,8 @@ const config = {
 
 // Selecciona automáticamente según el entorno
 const environment = import.meta.env.PROD ? 'production' : 'development';
-export const API_URL = config[environment].API_URL;
+export const API_URL =
+  import.meta.env.VITE_API_URL || 'https://ultra-siglad-backend.onrender.com/api';
 
 console.log('🚀 Environment:', environment);
 console.log('🔗 API URL:', API_URL);
