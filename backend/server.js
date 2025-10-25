@@ -30,7 +30,7 @@ app.use((req, res, next) => {
   console.log('🔧 CORS Middleware ejecutándose para:', req.method, req.url, 'Origin:', req.headers.origin);
   
   const allowedOrigins = [
-    'https://proyecto-desarrollo-web-frontend.onrender.com',
+    'https://ultra-siglad.onrender.com',
     'http://localhost:5173',
     'http://127.0.0.1:5173'
   ];
